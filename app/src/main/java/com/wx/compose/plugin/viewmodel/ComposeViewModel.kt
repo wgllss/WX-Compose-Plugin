@@ -156,7 +156,7 @@ class ComposeViewModel : ViewModel() {
                 MainUIItem("小组件", SubCActivity::class.java),
                 MainUIItem("SnckBar", SnckbarActivity::class.java),
                 MainUIItem("webview", WebViewActivity::class.java),
-                MainUIItem("Collapsable", CollapsableActivity::class.java),
+//                MainUIItem("Collapsable", CollapsableActivity::class.java),
                 MainUIItem("NavHost", NavHostActivity::class.java),
                 MainUIItem("插件化", ComposePluginActivity::class.java)
             )

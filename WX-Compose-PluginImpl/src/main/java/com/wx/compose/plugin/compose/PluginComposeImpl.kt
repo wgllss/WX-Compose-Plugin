@@ -85,7 +85,7 @@ fun baseUIXXXX(content: @Composable (PaddingValues) -> Unit, onClick: () -> Unit
                     .fillMaxWidth()
                     .fillMaxHeight(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.Center
             ) {
-                Text(text = "compose写法标题栏", fontSize = 18.sp, color = Color.Red, style = TextStyle.Default)
+                Text(text = "compose 插件化写法", fontSize = 18.sp, color = Color.Red, style = TextStyle.Default)
             }
         })
     }, bottomBar = {
@@ -369,7 +369,7 @@ fun layoutExamplexxx(innerPadding: PaddingValues) {
                     .background(Color.LightGray), text = "compose 内容列表:我是插件里面的", textAlign = TextAlign.Center, color = Color.Black
             )
 
-            //图片 需要从插件包 apk 里面拿到 resource ，从resource 里面取出draw，然后转化为 bitmap 再 转化为 imageBitmap 然后显示
+            //图片 需要从插件包 apk 里面拿到 resource ，从resource 里面取出drawable，然后转化为 bitmap 再 转化为 imageBitmap 然后显示
 //                Image(
 ////                    painter = painterResource(id = R.drawable.people_4),
 //                    bitmap = imageBitmap, contentDescription = "小姐姐", modifier = Modifier

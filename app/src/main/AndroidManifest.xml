@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wx.compose.plugin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WXComposePlugin"
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.wx.compose.plugin.activity.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.ComposeLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GirdLayoutActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.ViewPageLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HorizontalPagerLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TabLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ModalDrawerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TabHorizontalPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NavHostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PullToRefreshActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PullToRefreshActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PullToRefreshActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PullToRefreshActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PullToRefreshActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PullToRefreshActivity6"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SubCActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SnckbarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CollapsableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ComposePluginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ComposeListActivity"
+            android:exported="true">
+
+        </activity>
+
+    </application>
+
+</manifest>

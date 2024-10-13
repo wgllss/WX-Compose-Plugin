@@ -91,6 +91,15 @@
             android:name=".activity.CollapsableActivity"
             android:exported="false" />
         <activity
+            android:name=".activity.MutilGirdLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MutilHGirdLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ComposeHListActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ComposePluginActivity"
             android:exported="false" />
         <activity

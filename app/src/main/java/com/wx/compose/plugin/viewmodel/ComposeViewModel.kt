@@ -7,12 +7,15 @@ import androidx.lifecycle.viewModelScope
 import com.wx.compose.plugin.R
 import com.wx.compose.plugin.activity.BottomNavigationActivity
 import com.wx.compose.plugin.activity.CollapsableActivity
+import com.wx.compose.plugin.activity.ComposeHListActivity
 import com.wx.compose.plugin.activity.ComposeLayoutActivity
 import com.wx.compose.plugin.activity.ComposeListActivity
 import com.wx.compose.plugin.activity.ComposePluginActivity
 import com.wx.compose.plugin.activity.GirdLayoutActivity
 import com.wx.compose.plugin.activity.HorizontalPagerLayoutActivity
 import com.wx.compose.plugin.activity.ModalDrawerActivity
+import com.wx.compose.plugin.activity.MutilGirdLayoutActivity
+import com.wx.compose.plugin.activity.MutilHGirdLayoutActivity
 import com.wx.compose.plugin.activity.NavHostActivity
 import com.wx.compose.plugin.activity.PullToRefreshActivity
 import com.wx.compose.plugin.activity.PullToRefreshActivity2
@@ -139,8 +142,11 @@ class ComposeViewModel : ViewModel() {
         viewModelScope.launch {
             val list = listOf(
                 MainUIItem("基础布局", ComposeLayoutActivity::class.java),
-                MainUIItem("动态列表", ComposeListActivity::class.java),
+                MainUIItem("动态列表竖", ComposeListActivity::class.java),
+                MainUIItem("动态列表横", ComposeHListActivity::class.java),
                 MainUIItem("GirdLayout", GirdLayoutActivity::class.java),
+                MainUIItem("GirdLayout(横向)", MutilHGirdLayoutActivity::class.java),
+                MainUIItem("MutilGirdLayout", MutilGirdLayoutActivity::class.java),
                 MainUIItem("VerticalPager", ViewPageLayoutActivity::class.java),
                 MainUIItem("HorizontalPager", HorizontalPagerLayoutActivity::class.java),
                 MainUIItem("TabLayout", TabLayoutActivity::class.java),
@@ -156,7 +162,7 @@ class ComposeViewModel : ViewModel() {
                 MainUIItem("小组件", SubCActivity::class.java),
                 MainUIItem("SnckBar", SnckbarActivity::class.java),
                 MainUIItem("webview", WebViewActivity::class.java),
-//                MainUIItem("Collapsable", CollapsableActivity::class.java),
+                MainUIItem("Sticky", CollapsableActivity::class.java),
                 MainUIItem("NavHost", NavHostActivity::class.java),
                 MainUIItem("插件化", ComposePluginActivity::class.java)
             )

@@ -145,7 +145,67 @@ fun layoutExample(innerPadding: PaddingValues) {
                         top.linkTo(buttonID.bottom, margin = 16.dp)
                     })
         }
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .size(100.dp)
+        ) {
+            Image(painter = painterResource(id = R.drawable.people_4), contentDescription = "小姐姐", modifier = Modifier
+                .size(80.dp)
+                .padding(5.dp)
+                .weight(1.0f)
+                .clickable {
+                    Toast
+                        .makeText(context, "Image 点击事件", Toast.LENGTH_SHORT)
+                        .show()
+                })
+            Image(painter = painterResource(id = R.drawable.ava3), contentDescription = "小姐姐", modifier = Modifier
+                .size(80.dp)
+                .padding(5.dp)
+                .weight(1.0f)
+                .clickable {
+                    Toast
+                        .makeText(context, "Image 点击事件", Toast.LENGTH_SHORT)
+                        .show()
+                })
+            Image(painter = painterResource(id = R.drawable.ava1), contentDescription = "小姐姐", modifier = Modifier
+                .size(80.dp)
+                .padding(5.dp)
+                .weight(1.0f)
+                .clickable {
+                    Toast
+                        .makeText(context, "Image 点击事件", Toast.LENGTH_SHORT)
+                        .show()
+                })
+            Image(painter = painterResource(id = R.drawable.ava2), contentDescription = "小姐姐", contentScale = ContentScale.Crop, modifier = Modifier
+                .size(80.dp)
+                .padding(5.dp)
+                .weight(1.0f)
+                .clickable {
+                    Toast
+                        .makeText(context, "Image 点击事件", Toast.LENGTH_SHORT)
+                        .show()
+                })
 
+        }
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .size(50.dp)
+        ) {
+            Icon(
+                painter = painterResource(id = R.drawable.ic_home_black_24dp), contentDescription = "A", modifier = Modifier.size(100.dp)
+            )
+            Icon(
+                painter = painterResource(id = R.drawable.ic_dashboard_black_24dp), contentDescription = "A", modifier = Modifier.size(100.dp)
+            )
+            Icon(
+                painter = painterResource(id = R.drawable.ic_notifications_black_24dp), contentDescription = "A", modifier = Modifier.size(100.dp)
+            )
+            Icon(
+                painter = painterResource(id = R.drawable.ic_dashboard_black_24dp), contentDescription = "A", modifier = Modifier.size(100.dp)
+            )
+        }
         FlowColumn(
             modifier = Modifier
                 .fillMaxWidth()
@@ -322,67 +382,7 @@ fun layoutExample(innerPadding: PaddingValues) {
                     .align(Alignment.CenterHorizontally)
                     .background(Color.LightGray), text = "compose 内容列表:文字控件", textAlign = TextAlign.Center, color = Color.Black
             )
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .size(100.dp)
-            ) {
-                Image(painter = painterResource(id = R.drawable.people_4), contentDescription = "小姐姐", modifier = Modifier
-                    .size(80.dp)
-                    .padding(5.dp)
-                    .weight(1.0f)
-                    .clickable {
-                        Toast
-                            .makeText(context, "Image 点击事件", Toast.LENGTH_SHORT)
-                            .show()
-                    })
-                Image(painter = painterResource(id = R.drawable.ava3), contentDescription = "小姐姐", modifier = Modifier
-                    .size(80.dp)
-                    .padding(5.dp)
-                    .weight(1.0f)
-                    .clickable {
-                        Toast
-                            .makeText(context, "Image 点击事件", Toast.LENGTH_SHORT)
-                            .show()
-                    })
-                Image(painter = painterResource(id = R.drawable.ava1), contentDescription = "小姐姐", modifier = Modifier
-                    .size(80.dp)
-                    .padding(5.dp)
-                    .weight(1.0f)
-                    .clickable {
-                        Toast
-                            .makeText(context, "Image 点击事件", Toast.LENGTH_SHORT)
-                            .show()
-                    })
-                Image(painter = painterResource(id = R.drawable.ava2), contentDescription = "小姐姐", contentScale = ContentScale.Crop, modifier = Modifier
-                    .size(80.dp)
-                    .padding(5.dp)
-                    .weight(1.0f)
-                    .clickable {
-                        Toast
-                            .makeText(context, "Image 点击事件", Toast.LENGTH_SHORT)
-                            .show()
-                    })
 
-            }
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .size(50.dp)
-            ) {
-                Icon(
-                    painter = painterResource(id = R.drawable.ic_home_black_24dp), contentDescription = "A", modifier = Modifier.size(100.dp)
-                )
-                Icon(
-                    painter = painterResource(id = R.drawable.ic_dashboard_black_24dp), contentDescription = "A", modifier = Modifier.size(100.dp)
-                )
-                Icon(
-                    painter = painterResource(id = R.drawable.ic_notifications_black_24dp), contentDescription = "A", modifier = Modifier.size(100.dp)
-                )
-                Icon(
-                    painter = painterResource(id = R.drawable.ic_dashboard_black_24dp), contentDescription = "A", modifier = Modifier.size(100.dp)
-                )
-            }
         }
     }
 }

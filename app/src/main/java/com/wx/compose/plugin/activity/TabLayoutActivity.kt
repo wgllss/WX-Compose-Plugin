@@ -124,6 +124,7 @@ fun TabLayoutExample(innerPadding: PaddingValues, viewModel: ComposeViewModel) {
                 FancyTab(title = title, onClick = { state2 = index }, selected = (index == state2))
             }
         }
+        
     }
 }
 

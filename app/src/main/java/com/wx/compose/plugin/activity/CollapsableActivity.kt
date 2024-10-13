@@ -5,10 +5,12 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -40,9 +42,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.viewinterop.AndroidView
 import androidx.lifecycle.lifecycleScope
 import com.wx.compose.plugin.R
 import com.wx.compose.plugin.viewmodel.ComposeViewModel
+import com.wx.compose1.ui.composable.baseUI
 import com.wx.compose1.ui.theme.WXComposePlugin
 import kotlinx.coroutines.launch
 import me.onebone.toolbar.CollapsingToolbarScaffold
@@ -60,12 +64,23 @@ class CollapsableActivity : ComponentActivity() {
         lifecycleScope.launch {
             setContent {
                 WXComposePlugin {
-                    Surface(color = MaterialTheme.colorScheme.background) {
-                        ParallaxEffect()
-                    }
-//                    MainScreen()
-//                    CollapsingEffectScreen()
+//                    StickyHeaderSample()
+//                    Surface(color = MaterialTheme.colorScheme.background) {
+                    baseUI(content = { paddingvalues ->
+                        StickyHeaderSample(paddingvalues)
+                    }, onClick = {
+                        finish()
+                    })
+//                    }
                 }
+
+//                WXComposePlugin {
+//                    Surface(color = MaterialTheme.colorScheme.background) {
+//                        ParallaxEffect()
+//                    }
+////                    MainScreen()
+////                    CollapsingEffectScreen()
+//                }
             }
         }
     }
@@ -130,6 +145,7 @@ fun MainScreen() {
 }
 
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun ParallaxEffect() {
     val state = rememberCollapsingToolbarScaffoldState()
@@ -146,7 +162,7 @@ fun ParallaxEffect() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .background(Color.Red)
-                    .height(50.dp)
+                    .height(81.dp)
             )
 
             Image(
@@ -163,6 +179,15 @@ fun ParallaxEffect() {
             LazyColumn(
                 modifier = Modifier.fillMaxSize()
             ) {
+                stickyHeader {
+                    Text(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(81.dp)
+                            .align(Alignment.Center)
+                            .background(Color.Red), text = "吸顶标题栏", fontWeight = FontWeight.Bold
+                    )
+                }
                 items(List(100) { "Hello World!! $it" }) {
                     Text(
                         text = it, modifier = Modifier
@@ -179,20 +204,20 @@ fun ParallaxEffect() {
             }
         }
 
-        Row(
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-//            Checkbox(checked = enabled, onCheckedChange = { enabled = !enabled })
-
-            Text(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(50.dp)
-                    .align(Alignment.CenterVertically)
-//                    .background(Color.Red)
-                , text = "Enable collapse/expand", fontWeight = FontWeight.Bold
-            )
-        }
+//        Row(
+//            verticalAlignment = Alignment.CenterVertically
+//        ) {
+////            Checkbox(checked = enabled, onCheckedChange = { enabled = !enabled })
+//
+//            Text(
+//                modifier = Modifier
+//                    .fillMaxWidth()
+//                    .height(50.dp)
+//                    .align(Alignment.CenterVertically)
+////                    .background(Color.Red)
+//                , text = "Enable collapse/expand", fontWeight = FontWeight.Bold
+//            )
+//        }
     }
 }
 
@@ -221,6 +246,47 @@ fun CollapsingEffectScreen() {
             )
         }
     }
+}
+
+//@OptIn(ExperimentalFoundationApi::class)
+//@Composable
+//fun ListWithHeader(items: List<Item>) {
+//    LazyColumn {
+//        stickyHeader {
+//        }
+//
+//        items(items) { item ->
+//            ItemRow(item)
+//        }
+//    }
+//}
+
+
+@OptIn(ExperimentalFoundationApi::class)
+@Composable
+fun StickyHeaderSample(paddingValues: PaddingValues) {
+    val sections = listOf("A", "B", "C", "D", "E", "F", "G")
+
+    LazyColumn(
+        modifier = Modifier.padding(paddingValues), contentPadding = PaddingValues(6.dp)
+    ) {
+        sections.forEach { section ->
+            stickyHeader {
+                Text(
+                    text = "Section $section", color = Color.White, modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp)
+                        .background(Color.Red)
+                        .padding(8.dp)
+                )
+            }
+            items(10) {
+                Text("Item $it from the section $section")
+            }
+        }
+    }
+
+//    DraggableGrid()
 }
 
 

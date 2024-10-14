@@ -72,9 +72,6 @@
 
 **本文涉及到demo示例：大多都是官方代码example,下文中会带大家直接查看官方示例代码**
 
-**[项目地址github](https://github.com/wgllss/WX-Compose-Plugin)**\
-**[项目地址gitee](https://gitee.com/wgllss888/WX-Compose-Plugin)**
-
 ## 三、项目详情
 
 因为这是最简单的布局使用，只贴几个案例代码就行了：

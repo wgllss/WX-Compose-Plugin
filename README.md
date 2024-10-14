@@ -1,4 +1,4 @@
-![641.webp](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/52d9a52e470c4c35ad02e7358467fc49~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1729497423&x-orig-sign=CFjJ61s064Mw0NUtvnXitD8W8zE%3D)
+![641.webp](https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/Sheet1.png](https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/641.png)
 
 > 想要翱翔天空，必先丰满自己的羽翼-——插件化  :   你得先从爬开始学习\
 > [（一）零反射，零HooK,全动态化，插件化框架，全网唯一结合启动优化的插件化架构](https://juejin.cn/post/7347994218235363382)\

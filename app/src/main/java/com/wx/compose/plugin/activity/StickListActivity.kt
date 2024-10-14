@@ -98,8 +98,6 @@ fun StickyHeaderSample(paddingValues: PaddingValues) {
             }
         }
     }
-
-//    DraggableGrid()
 }
 
 

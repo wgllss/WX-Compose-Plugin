@@ -22,7 +22,7 @@
 3.  **插件化中最简单的 纯代码是怎么做到插件化的？（用compose 代码布局来示例）**
 
 *   **常用传统XML控件和Compose控件对照表**
-    ![Sheet1.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/12a2d5e5d21f460eb18cebbce0b03db3~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1729497423&x-orig-sign=PJURAsBivDP0xudg6QbVaq6zOy8%3D)
+    ![https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/Sheet1.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/12a2d5e5d21f460eb18cebbce0b03db3~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1729497423&x-orig-sign=PJURAsBivDP0xudg6QbVaq6zOy8%3D)
 
 **用一个Demo 示例工程，带你入门Compose基础开发：**\
 **用一个Demo 示例工程，带你入门Compose插件化开发：**
@@ -50,7 +50,7 @@
 
 **示例部分截图：**
 
-<img src="https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/6219cc3c99604849af976a63348ca966~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1729497423&x-orig-sign=WA3d67uk1awqPuafnmlY0TD5r50%3D" width="177" height="338">
+<img src="https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/Screenshot_20241014_122121.png" width="177" height="338">
 <img src="https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/2e04fdcb99314558a0ca96166aa66ff1~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1729497423&x-orig-sign=ytqVBaF%2FUfSjxBAbR%2FPlsgog9kY%3D" width="177" height="338">
 <img src="https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/4de4e13e0db344f9b9c718ee5e77c636~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1729497423&x-orig-sign=7sPvE796uJ5xSUB8TmlGUpMmE6w%3D" width="177" height="338">
 

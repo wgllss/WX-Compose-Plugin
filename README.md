@@ -1,4 +1,4 @@
-![641.webp](https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/Sheet1.png](https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/641.png)
+![641.webp](https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/Sheet1.png](https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/641.webp)
 
 > 想要翱翔天空，必先丰满自己的羽翼-——插件化  :   你得先从爬开始学习\
 > [（一）零反射，零HooK,全动态化，插件化框架，全网唯一结合启动优化的插件化架构](https://juejin.cn/post/7347994218235363382)\

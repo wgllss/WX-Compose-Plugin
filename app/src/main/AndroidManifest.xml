@@ -100,6 +100,9 @@
             android:name=".activity.ComposeHListActivity"
             android:exported="false" />
         <activity
+            android:name=".activity.StickListActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ComposePluginActivity"
             android:exported="false" />
         <activity

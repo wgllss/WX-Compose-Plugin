@@ -40,6 +40,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.viewinterop.AndroidView
@@ -64,23 +65,12 @@ class CollapsableActivity : ComponentActivity() {
         lifecycleScope.launch {
             setContent {
                 WXComposePlugin {
-//                    StickyHeaderSample()
-//                    Surface(color = MaterialTheme.colorScheme.background) {
-                    baseUI(content = { paddingvalues ->
-                        StickyHeaderSample(paddingvalues)
-                    }, onClick = {
-                        finish()
-                    })
-//                    }
-                }
-
-//                WXComposePlugin {
 //                    Surface(color = MaterialTheme.colorScheme.background) {
 //                        ParallaxEffect()
 //                    }
-////                    MainScreen()
-////                    CollapsingEffectScreen()
-//                }
+                    MainScreen()
+//                    ParallaxEffect()
+                }
             }
         }
     }
@@ -89,10 +79,8 @@ class CollapsableActivity : ComponentActivity() {
 @Composable
 fun MainScreen() {
     val state = rememberCollapsingToolbarScaffoldState()
-
-    CollapsingToolbarScaffold(modifier = Modifier.fillMaxSize(), state = state, scrollStrategy = ScrollStrategy.EnterAlways, toolbar = {
+    CollapsingToolbarScaffold(modifier = Modifier.fillMaxSize(), state = state, scrollStrategy = ScrollStrategy.ExitUntilCollapsed, toolbar = {
         val textSize = (18 + (30 - 18) * state.toolbarState.progress).sp
-
         Box(
             modifier = Modifier
                 .background(MaterialTheme.colorScheme.primary)
@@ -100,17 +88,23 @@ fun MainScreen() {
                 .height(150.dp)
                 .pin()
         )
-
         Image(
             modifier = Modifier
+                .parallax(0.5f)
+                .height(300.dp)
+                .fillMaxWidth()
                 .pin()
-                .padding(16.dp), painter = painterResource(id = R.drawable.ava2), contentDescription = null
+//                .padding(16.dp)
+                .graphicsLayer {
+                    // change alpha of Image as the toolbar expands
+                    alpha = state.toolbarState.progress
+                }, contentScale = ContentScale.Crop, painter = painterResource(id = R.drawable.ava2), contentDescription = null
         )
-
         Text(
             text = "Title", modifier = Modifier
+//                .height(81.dp)
                 .road(Alignment.CenterStart, Alignment.BottomEnd)
-                .padding(60.dp, 16.dp, 16.dp, 16.dp), color = Color.White, fontSize = textSize
+                .padding(60.dp, 36.dp, 16.dp, 16.dp), textAlign = TextAlign.Center, color = Color.White, fontSize = textSize
         )
     }) {
         LazyColumn(
@@ -123,25 +117,16 @@ fun MainScreen() {
             }
         }
 
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .alpha(0.5f)
-                .background(MaterialTheme.colorScheme.secondary)
-                .height(40.dp)
-        )
+//        Box(modifier = Modifier
+//            .fillMaxWidth()
+//            .alpha(0.5f)
+////            .background(MaterialTheme.colorScheme.secondary)
+//            .graphicsLayer {
+//                // change alpha of Image as the toolbar expands
+//                alpha = state.toolbarState.progress
+//            }
+//            .height(40.dp))
     }
-
-//    CollapsingToolbarScaffold(
-//        modifier = Modifier.fillMaxSize(),
-//        state = rememberCollapsingToolbarScaffoldState(),
-//        scrollStrategy = ScrollStrategy.ExitUntilCollapsed,
-//        toolbar = {
-//            // toolbar contents...
-//        }
-//    ) {
-//        // body contents...
-//    }
 }
 
 
@@ -153,7 +138,7 @@ fun ParallaxEffect() {
     var enabled by remember { mutableStateOf(true) }
 
     Box {
-        CollapsingToolbarScaffold(modifier = Modifier.fillMaxSize(), state = state, scrollStrategy = ScrollStrategy.EnterAlwaysCollapsed, toolbarModifier = Modifier.background(MaterialTheme.colorScheme.primary), enabled = enabled, toolbar = {
+        CollapsingToolbarScaffold(modifier = Modifier.fillMaxSize(), state = state, scrollStrategy = ScrollStrategy.ExitUntilCollapsed, toolbarModifier = Modifier.background(MaterialTheme.colorScheme.primary), enabled = enabled, toolbar = {
             // Collapsing toolbar collapses its size as small as the that of
             // a smallest child. To make the toolbar collapse to 50dp, we create
             // a dummy Spacer composable.
@@ -162,7 +147,7 @@ fun ParallaxEffect() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .background(Color.Red)
-                    .height(81.dp)
+                    .height(50.dp)
             )
 
             Image(
@@ -185,7 +170,8 @@ fun ParallaxEffect() {
                             .fillMaxWidth()
                             .height(81.dp)
                             .align(Alignment.Center)
-                            .background(Color.Red), text = "吸顶标题栏", fontWeight = FontWeight.Bold
+//                            .background(Color.Red)
+                        , text = "吸顶标题栏", fontWeight = FontWeight.Bold
                     )
                 }
                 items(List(100) { "Hello World!! $it" }) {
@@ -219,74 +205,6 @@ fun ParallaxEffect() {
 //            )
 //        }
     }
-}
-
-@Composable
-fun CollapsingEffectScreen() {
-    val items = (1..100).map { "Item $it" }
-    val lazyListState = rememberLazyListState()
-    var scrolledY = 0f
-    var previousOffset = 0
-    LazyColumn(
-        Modifier.fillMaxSize(),
-        lazyListState,
-    ) {
-        item {
-            Image(
-                painter = painterResource(id = R.drawable.ava2), modifier = Modifier.graphicsLayer {
-                    scrolledY += lazyListState.firstVisibleItemScrollOffset - previousOffset
-                    translationY = scrolledY * 0.5f
-                    previousOffset = lazyListState.firstVisibleItemScrollOffset
-                }, contentScale = ContentScale.Crop, contentDescription = null
-            )
-        }
-        items(100) {
-            Text(
-                text = "Item $it", modifier = Modifier.padding(8.dp)
-            )
-        }
-    }
-}
-
-//@OptIn(ExperimentalFoundationApi::class)
-//@Composable
-//fun ListWithHeader(items: List<Item>) {
-//    LazyColumn {
-//        stickyHeader {
-//        }
-//
-//        items(items) { item ->
-//            ItemRow(item)
-//        }
-//    }
-//}
-
-
-@OptIn(ExperimentalFoundationApi::class)
-@Composable
-fun StickyHeaderSample(paddingValues: PaddingValues) {
-    val sections = listOf("A", "B", "C", "D", "E", "F", "G")
-
-    LazyColumn(
-        modifier = Modifier.padding(paddingValues), contentPadding = PaddingValues(6.dp)
-    ) {
-        sections.forEach { section ->
-            stickyHeader {
-                Text(
-                    text = "Section $section", color = Color.White, modifier = Modifier
-                        .fillMaxWidth()
-                        .height(50.dp)
-                        .background(Color.Red)
-                        .padding(8.dp)
-                )
-            }
-            items(10) {
-                Text("Item $it from the section $section")
-            }
-        }
-    }
-
-//    DraggableGrid()
 }
 
 

@@ -24,6 +24,7 @@ import com.wx.compose.plugin.activity.PullToRefreshActivity4
 import com.wx.compose.plugin.activity.PullToRefreshActivity5
 import com.wx.compose.plugin.activity.PullToRefreshActivity6
 import com.wx.compose.plugin.activity.SnckbarActivity
+import com.wx.compose.plugin.activity.StickListActivity
 import com.wx.compose.plugin.activity.SubCActivity
 import com.wx.compose.plugin.activity.TabHorizontalPagerActivity
 import com.wx.compose.plugin.activity.TabLayoutActivity
@@ -162,7 +163,8 @@ class ComposeViewModel : ViewModel() {
                 MainUIItem("小组件", SubCActivity::class.java),
                 MainUIItem("SnckBar", SnckbarActivity::class.java),
                 MainUIItem("webview", WebViewActivity::class.java),
-                MainUIItem("Sticky", CollapsableActivity::class.java),
+                MainUIItem("Sticky", StickListActivity::class.java),
+                MainUIItem("CollapsingToolbar", CollapsableActivity::class.java),
                 MainUIItem("NavHost", NavHostActivity::class.java),
                 MainUIItem("插件化", ComposePluginActivity::class.java)
             )

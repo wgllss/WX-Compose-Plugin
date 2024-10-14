@@ -247,7 +247,7 @@ fun SwipeToDismissListItems() {
 @Preview
 @Composable
 fun SliderSample() {
-    var sliderPosition by remember { mutableStateOf(0f) }
+    var sliderPosition by remember { mutableStateOf(0.5f) }
     Column(modifier = Modifier.padding(horizontal = 16.dp)) {
         Text(text = "%.2f".format(sliderPosition))
         Slider(modifier = Modifier.semantics { contentDescription = "Localized Description" }, value = sliderPosition, onValueChange = { sliderPosition = it })

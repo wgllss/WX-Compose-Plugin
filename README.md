@@ -81,7 +81,7 @@
 1. **以`LazyVerticalGrid`为例：**
 2.
 
-![img\_v3\_02fl\_70eb77d1-2529-4f7c-8034-60a4df1072eg.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/2828bed3635d4bae98f90936e7ffe37c~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1729497423&x-orig-sign=kldomHxuTrIcIlBQOMc%2F3yox3Ng%3D)
+![https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/img_v3_02fl_70eb77d1-2529-4f7c-8034-60a4df1072eg.png](https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/img_v3_02fl_70eb77d1-2529-4f7c-8034-60a4df1072eg.png)
 3\. 直接点击上图2中 [androidx. compose. foundation. samples. LazyVerticalGridSpanSample]()就可以查看相关example源代码了
 
 ## 五、Compose如何实现插件化开发

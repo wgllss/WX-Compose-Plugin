@@ -291,7 +291,8 @@ tasks.whenTaskAdded { task ->
 
 11. **直接点击Gradle中 `assembleDxCommandAndCopy`**,会自动把 4和5中的步骤 操作完，并把输出的compose\_plugin\_lib\_dex文件放到 整个主工程的build下面：
 
-![img\_v3\_02fl\_2ec33f8f-8fe2-4d14-af38-25fa04a8aeag.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/048ac34a496b45bea6be6e9ec4157dd0~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1729497423&x-orig-sign=5QjZuZb6e%2FMa7SRSOgevl3bm47k%3D)
+![img_v3_02fl_39e304ea-9574-4555-91b6-c67fa63c47bg.jpg](https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/img_v3_02fl_39e304ea-9574-4555-91b6-c67fa63c47bg.jpg)
+
 
 ## 六、总结
 

@@ -1,6 +1,6 @@
 ![641.webp](https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/641.webp)
 
-> 想要翱翔天空，必先丰满自己的羽翼-——插件化  :   你得先从爬开始学习\
+> 想要翱翔天空，必先丰满自己的羽翼-——插件化:你得先从爬开始学习\
 > [（一）零反射，零HooK,全动态化，插件化框架，全网唯一结合启动优化的插件化架构](https://juejin.cn/post/7347994218235363382)\
 > [（二）零反射，零HooK,全动态化，插件化框架，全网唯一结合启动优化的插件化架构](https://juejin.cn/post/7367676494976532490)\
 > [（三）零反射，零HooK,全动态化，插件化框架，全网唯一结合启动优化的插件化架构](https://juejin.cn/post/7368397264026370083)\
@@ -17,12 +17,12 @@
 
 **本文学习思路：**
 
-1.  **[Jetpack Compose](https://link.juejin.cn/?target=https%3A%2F%2Fdeveloper.android.com%2Fdevelop%2Fui%2Fcompose "https://developer.android.com/develop/ui/compose")是新一代的声明式的UI开发框架,是未来的一种趋势，介绍最基础用法学习**
-2.  **如何通过代码直接链接点过去查看官方案例代码？**
-3.  **插件化中最简单的 纯代码是怎么做到插件化的？（用compose 代码布局来示例）**
+1. **[Jetpack Compose](https://link.juejin.cn/?target=https%3A%2F%2Fdeveloper.android.com%2Fdevelop%2Fui%2Fcompose "https://developer.android.com/develop/ui/compose")是新一代的声明式的UI开发框架,是未来的一种趋势，介绍最基础用法学习**
+2. **如何通过代码直接链接点过去查看官方案例代码？**
+3. **插件化中最简单的 纯代码是怎么做到插件化的？（用compose 代码布局来示例）**
 
-*   **常用传统XML控件和Compose控件对照表**
-    ![https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/Sheet1.png](https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/Sheet1.png)
+* **常用传统XML控件和Compose控件对照表**
+  ![https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/Sheet1.png](https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/Sheet1.png)
 
 **用一个Demo 示例工程，带你入门Compose基础开发：**\
 **用一个Demo 示例工程，带你入门Compose插件化开发：**
@@ -31,22 +31,22 @@
 
 **示例工程不涉及任何架构，最自由式写法，单条目介绍Compose 相关写法**
 
-*   **示例基本布局，横向写法，竖向写法:（`Row`,`Column`,`Box`,`ConstraintLayout`）**
-*   **示例竖向滚动写法:（`Column + Modifier.verticalScroll(rememberScrollState())`）**
-*   **示例竖向滚动写法:（`Row = Modifier.horizontalScroll(rememberScrollState())`）**
-*   **示例复杂列表相关写法:（`LazyRow`，`LazyColumn`，`LazyVerticalGrid +GridItemSpan`，`LazyHorizontalGrid +GridItemSpan`）**
-*   **示例横竖翻页相关写法:（`HorizontalPager`，`VerticalPager`）**
-*   **示例Tab栏相关写法:（`TabRow`，`ScrollableTabRow`）**
-*   **示例底部菜单栏相关写法:（`NavHost`，`NavigationBar`）**
-*   **示例侧滑单栏相关写法:（`ModalNavigationDrawer`）**
-*   **示例头部栏相关写法:（`TopAppBar`）**
-*   **示例下拉刷新相关写法:（`Modifier.pullToRefresh`）**
-*   **示例网络图片相关写法:（`AsyncImage + coil-compose库`）**
-*   **示例吸顶栏相关写法:（`stickyHeader`）**
-*   **示例收缩固定头部栏相关写法:（`me.onebone:toolbar-compose:2.3.5 库`）**
-*   **示例WebView相关写法:（`AndroidView + WebView`）**
-*   **示例基础控件相关写法:（`Image，Icon`,`Text`,`Checkbox`,`Switch`,`Button`,`TextField`,`RadioButton`,`Slider`,`DropdownMenu`,`ExposedDropdownMenuBox`,`IconButton`,`Slider`,`Slider`）**
-*   **示例Compose插件化相关写法:**
+* **示例基本布局，横向写法，竖向写法:（`Row`,`Column`,`Box`,`ConstraintLayout`）**
+* **示例竖向滚动写法:（`Column + Modifier.verticalScroll(rememberScrollState())`）**
+* **示例竖向滚动写法:（`Row = Modifier.horizontalScroll(rememberScrollState())`）**
+* **示例复杂列表相关写法:（`LazyRow`，`LazyColumn`，`LazyVerticalGrid +GridItemSpan`，`LazyHorizontalGrid +GridItemSpan`）**
+* **示例横竖翻页相关写法:（`HorizontalPager`，`VerticalPager`）**
+* **示例Tab栏相关写法:（`TabRow`，`ScrollableTabRow`）**
+* **示例底部菜单栏相关写法:（`NavHost`，`NavigationBar`）**
+* **示例侧滑单栏相关写法:（`ModalNavigationDrawer`）**
+* **示例头部栏相关写法:（`TopAppBar`）**
+* **示例下拉刷新相关写法:（`Modifier.pullToRefresh`）**
+* **示例网络图片相关写法:（`AsyncImage + coil-compose库`）**
+* **示例吸顶栏相关写法:（`stickyHeader`）**
+* **示例收缩固定头部栏相关写法:（`me.onebone:toolbar-compose:2.3.5 库`）**
+* **示例WebView相关写法:（`AndroidView + WebView`）**
+* **示例基础控件相关写法:（`Image，Icon`,`Text`,`Checkbox`,`Switch`,`Button`,`TextField`,`RadioButton`,`Slider`,`DropdownMenu`,`ExposedDropdownMenuBox`,`IconButton`,`Slider`,`Slider`）**
+* **示例Compose插件化相关写法:**
 
 **示例部分截图：**
 
@@ -74,453 +74,11 @@
 
 ## 三、项目详情
 
-因为这是最简单的布局使用，只贴几个案例代码就行了：
-
-1.  **类似RecyclerView 网格布局：**
-
-```
-
-@Composable
-fun girdLayoutExample(innerPadding: PaddingValues, viewModel: ComposeViewModel) {
-    val datas by viewModel.datas.observeAsState(initial = emptyList())
-    LazyVerticalGrid(
-        modifier = Modifier
-            .fillMaxWidth()
-            .fillMaxHeight()
-//            .verticalScroll(rememberScrollState())
-        , columns = GridCells.Fixed(2)
-    ) {
-        items(datas) { data ->
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .horizontalScroll(rememberScrollState())
-                    .height(80.dp), verticalAlignment = Alignment.CenterVertically
-            ) {
-                Image(
-                    painter = painterResource(id = data.resID), contentDescription = "小姐姐", modifier = Modifier
-                        .size(80.dp)
-                        .padding(5.dp), contentScale = ContentScale.Fit
-                )
-                AsyncImage(
-                    model = data.imgUrl, contentDescription = "", contentScale = ContentScale.Crop
-                )
-                val modelBuilder = ImageRequest.Builder(LocalContext.current).data(data.imgUrl ?: "").crossfade(false).allowHardware(true).build()
-                Image(
-                    painter = rememberAsyncImagePainter(model = modelBuilder), contentDescription = "小姐姐", modifier = Modifier
-                        .size(80.dp)
-                        .padding(5.dp), contentScale = ContentScale.Crop
-                )
-            }
-        }
-    }
-}
-```
-
-2.  类似RecyclerView 多个Item布局
-
-<!---->
-
-    @Composable
-    fun LazyVerticalGridSpanSample(paddingValues: PaddingValues) {
-        val sections = (0 until 25).toList().chunked(6)
-        val items22 = remember { listOf("Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6") }
-
-        LazyVerticalGrid(
-            modifier = Modifier.padding(paddingValues), columns = GridCells.Fixed(3), horizontalArrangement = Arrangement.spacedBy(16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)
-        ) {
-            sections.forEachIndexed { index, items ->
-                item(span = { GridItemSpan(maxLineSpan) }) {
-                    Text(
-                        "This is section $index",
-                        Modifier
-                            .border(1.dp, Color.Gray)
-                            .height(80.dp)
-                            .wrapContentSize()
-                    )
-                }
-                items(items, span = { GridItemSpan(1) }) {
-                    Text(
-                        "Item $it",
-                        Modifier
-                            .border(1.dp, Color.Blue)
-                            .height(80.dp)
-                            .wrapContentSize()
-                    )
-                }
-
-                item(span = { GridItemSpan(3) }) {
-                    LazyRow(
-                        modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp), contentPadding = PaddingValues(8.dp)
-                    ) {
-                        items(items22) { item ->
-                            Box(
-                                modifier = Modifier
-                                    .background(Color.Green)
-                                    .padding(16.dp)
-                                    .width(120.dp)
-                                    .height(120.dp), contentAlignment = Alignment.Center
-                            ) {
-                                Text(text = "AAA $item", color = Color.White)
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-3.  **`TabRow` + `HorizontalPager` Tab标签 和 滑动联动翻页：**
-
-```
-
-@SuppressLint("UnrememberedMutableState")
-@Composable
-fun tabPage(innerPadding: PaddingValues, viewModel: ComposeViewModel) {
-    var state by remember { mutableStateOf(0) }
-    var statePage = rememberPagerState(initialPage = state) { 5 }
-    val titles = listOf("Tab 1", "Tab 2", "Tab 3 ", "Tab 4 ", "Tab 5 ")
-    val scope = rememberCoroutineScope()
-    Column(
-        modifier = Modifier
-            .padding(innerPadding)
-            .background(Color.Yellow)
-//            .verticalScroll(rememberScrollState())
-            .padding(5.dp)
-            .fillMaxWidth()
-            .fillMaxHeight()
-    ) {
-        TabRow(selectedTabIndex = statePage.currentPage) {
-            titles.forEachIndexed { index, title ->
-                Tab(modifier = Modifier.background(Color.Green), selected = state == index, onClick = {
-                    scope.launch {
-//                        statePage.scrollToPage(index)
-                        statePage.animateScrollToPage(index)
-                    }
-                }, text = {
-                    Text(text = title, maxLines = 2, overflow = TextOverflow.Ellipsis, fontSize = 20.sp, color = Color.Magenta)
-                })
-            }
-        }
-        HorizontalPager(
-            state = statePage, modifier = Modifier
-                .fillMaxWidth()
-                .fillMaxHeight()
-        ) { page ->
-            when (page) {
-                0 -> page1(viewModel)
-                else -> Box(
-                    modifier = Modifier
-                        .padding(10.dp)
-                        .background(Color.Red)
-                        .fillMaxWidth()
-                        .fillMaxHeight()
-                        .aspectRatio(1f), contentAlignment = Alignment.Center
-                ) {
-                    Text(text = page.toString(), fontSize = 32.sp)
-                }
-            }
-        }
-    }
-}
-```
-
-4.  **侧滑菜单栏：`ModalNavigationDrawer`**:
-
-```
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun ModalDrawerExample() {
-    val drawerState = rememberDrawerState(DrawerValue.Closed)
-    val scope = rememberCoroutineScope()
-    // icons to mimic drawer destinations
-    val items = listOf(
-        Icons.Default.AccountCircle,
-        Icons.Default.Email,
-        Icons.Default.Favorite,
-        Icons.Default.AccountBox,
-        Icons.Default.Build,
-        Icons.Default.LocationOn,
-        Icons.Default.Lock,
-        Icons.Default.CheckCircle,
-        Icons.Default.AddCircle,
-        Icons.Default.MailOutline,
-    )
-    val selectedItem = remember { mutableStateOf(items[0]) }
-    val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
-    Scaffold(topBar = {
-        TopAppBar(modifier = Modifier
-            .fillMaxWidth()
-            .background(Color.Blue)
-            .height(81.dp), colors = mediumTopAppBarColors(
-            containerColor = Color.Blue,
-            titleContentColor = MaterialTheme.colorScheme.primary,
-        ), title = {
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .fillMaxHeight(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.Center
-            ) {
-                Text(text = "compose navigation题栏", fontSize = 18.sp, color = Color.Red, style = TextStyle.Default)
-            }
-        }, navigationIcon = {
-            IconButton(onClick = {
-                scope.launch {
-                    if (drawerState.isClosed) {
-                        drawerState.open()
-                    } else {
-                        drawerState.close()
-                    }
-
-                }
-            }) {
-                Icon(
-                    imageVector = Icons.Filled.Menu, contentDescription = "Localized description"
-                )
-            }
-        }, actions = {
-            IconButton(onClick = {
-                /* doSomething() */
-            }) {
-                Icon(imageVector = Icons.Filled.Favorite, contentDescription = "Localized description")
-            }
-        }, scrollBehavior = scrollBehavior
-        )
-
-    }) { innerPadding ->
-        ModalNavigationDrawer(modifier = Modifier.padding(innerPadding), drawerState = drawerState, drawerContent = {
-            ModalDrawerSheet(drawerState) {
-                Column(Modifier.verticalScroll(rememberScrollState())) {
-                    Spacer(Modifier.height(12.dp))
-                    items.forEach { item ->
-                        NavigationDrawerItem(icon = {
-                            Icon(item, contentDescription = null)
-                        }, label = {
-                            Text(item.name.substringAfterLast("."))
-                        }, selected = item == selectedItem.value, onClick = {
-                            scope.launch {
-                                drawerState.close()
-                            }
-                            selectedItem.value = item
-                        }, modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding)
-                        )
-                    }
-                }
-            }
-        }, content = {
-            Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(16.dp), horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Text(text = if (drawerState.isClosed) ">>> Swipe >>>" else "<<< Swipe <<<")
-                Spacer(Modifier.height(20.dp))
-                Button(onClick = { scope.launch { drawerState.open() } }) { Text("Click to open") }
-            }
-        })
-    }
-}
-```
-
-5.  **底部菜单栏：`NavigationBar`**
-
-```
-
-@Composable
-fun BottomNavigationContent() {
-    var selectedItem by remember { mutableIntStateOf(0) }
-    val items = listOf("首页", "视频", "购物", "设置")
-
-    NavigationBar(
-        modifier = Modifier
-            .fillMaxWidth()
-            .wrapContentHeight()
-            .background(Color.Green)
-    ) {
-        items.forEachIndexed { index, item ->
-            NavigationBarItem(modifier = Modifier
-                .wrapContentHeight()
-                .fillMaxWidth()
-                .padding(0.dp)
-                .background(Color.Yellow)
-                .padding(0.dp), icon = {
-                Icon(Icons.Filled.Favorite, contentDescription = item)
-            }, label = { Text(item) }, selected = selectedItem == index, onClick = { selectedItem = index })
-        }
-    }
-}
-```
-
-6.  **底部菜单栏`NavHost`**
-
-<!---->
-
-    @Composable
-    fun navHost(
-        modifier: Modifier = Modifier, navController: NavHostController = rememberNavController(), start: String = "first_screen", state: ScrollState = rememberScrollState()
-    ) {
-        NavHost(
-            modifier = modifier, navController = navController, startDestination = start
-        ) {
-            composable("first_screen") {
-                FirstScreen(navController = navController, state)
-            }
-            composable("second_screen") {
-                SecondScreen(navController = navController)
-            }
-            composable("third_screen") {
-                ThirdScreen(navController = navController)
-            }
-        }
-    }
-
-7.  **谷歌官方下拉刷新**：
-
-```
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun PullToRefreshScalingSample(onClick: () -> Unit) {
-    var itemCount by remember { mutableStateOf(15) }
-    var isRefreshing by remember { mutableStateOf(false) }
-    val state = rememberPullToRefreshState()
-    val coroutineScope = rememberCoroutineScope()
-
-
-    val onRefresh: () -> Unit = {
-        isRefreshing = true
-        coroutineScope.launch {
-            // fetch something
-            delay(1500)
-            itemCount += 5
-            isRefreshing = false
-        }
-    }
-
-    val scaleFraction = {
-        if (isRefreshing) 1f
-        else LinearOutSlowInEasing.transform(state.distanceFraction).coerceIn(0f, 1f)
-    }
-
-    Scaffold(modifier = Modifier.pullToRefresh(
-        state = state, isRefreshing = isRefreshing, onRefresh = onRefresh
-    ), topBar = {
-        TopAppBar(title = { Text("TopAppBar") },
-            // Provide an accessible alternative to trigger refresh.
-            actions = {
-                IconButton(onClick = onRefresh) {
-                    Icon(Icons.Filled.Refresh, "Trigger Refresh")
-                }
-            })
-    }, floatingActionButton = {
-        FloatingActionButton(onClick = onClick) {
-            Icon(
-                Icons.Default.ArrowBack, contentDescription = "Add", tint = Color.Red
-            )
-        }
-    }) {
-        Box(Modifier.padding(it)) {
-            LazyColumn(Modifier.fillMaxSize()) {
-                if (!isRefreshing) {
-                    items(itemCount) { ListItem({ Text(text = "Item ${itemCount - it}") }) }
-                }
-            }
-            Box(
-                Modifier
-                    .align(Alignment.TopCenter)
-                    .graphicsLayer {
-                        scaleX = scaleFraction()
-                        scaleY = scaleFraction()
-                    }) {
-                PullToRefreshDefaults.Indicator(state = state, isRefreshing = isRefreshing)
-            }
-        }
-    }
-}
-```
-
-8.  **谷歌官方吸顶：`stickyHeader`**：
-
-```
-
-@OptIn(ExperimentalFoundationApi::class)
-@Composable
-fun StickyHeaderSample(paddingValues: PaddingValues) {
-    val sections = listOf("A", "B", "C", "D", "E", "F", "G")
-
-    LazyColumn(
-        modifier = Modifier.padding(paddingValues), contentPadding = PaddingValues(6.dp)
-    ) {
-        sections.forEach { section ->
-            stickyHeader {
-                Text(
-                    text = "Section $section", color = Color.White, modifier = Modifier
-                        .fillMaxWidth()
-                        .height(50.dp)
-                        .background(Color.Red)
-                        .padding(8.dp)
-                )
-            }
-            items(10) {
-                Text("Item $it from the section $section")
-            }
-        }
-    }
-}
-```
-
-9.  **三方库`Compose 实现 CollapsableTopBarLayout`效果**：
-
-```
-
-@Composable
-fun MainScreen() {
-    val state = rememberCollapsingToolbarScaffoldState()
-    CollapsingToolbarScaffold(modifier = Modifier.fillMaxSize(), state = state, scrollStrategy = ScrollStrategy.ExitUntilCollapsed, toolbar = {
-        val textSize = (18 + (30 - 18) * state.toolbarState.progress).sp
-        Box(
-            modifier = Modifier
-                .background(MaterialTheme.colorScheme.primary)
-                .fillMaxWidth()
-                .height(150.dp)
-                .pin()
-        )
-        Image(
-            modifier = Modifier
-                .parallax(0.5f)
-                .height(300.dp)
-                .fillMaxWidth()
-                .pin()
-//                .padding(16.dp)
-                .graphicsLayer {
-                    // change alpha of Image as the toolbar expands
-                    alpha = state.toolbarState.progress
-                }, contentScale = ContentScale.Crop, painter = painterResource(id = R.drawable.ava2), contentDescription = null
-        )
-        Text(
-            text = "Title", modifier = Modifier
-//                .height(81.dp)
-                .road(Alignment.CenterStart, Alignment.BottomEnd)
-                .padding(60.dp, 36.dp, 16.dp, 16.dp), textAlign = TextAlign.Center, color = Color.White, fontSize = textSize
-        )
-    }) {
-        LazyColumn(
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            items(100) {
-                Text(
-                    text = "Item $it", modifier = Modifier.padding(8.dp)
-                )
-            }
-        }
-    }
-}
-```
+因为这是最简单的布局使用，只贴几个案例代码就行了,参考上面表格，和项目代码：
 
 ## 四、如何直接链接到官方example?
 
-1.  **以`LazyVerticalGrid`为例：**
+1. **以`LazyVerticalGrid`为例：**
 2.
 
 ![img\_v3\_02fl\_70eb77d1-2529-4f7c-8034-60a4df1072eg.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/2828bed3635d4bae98f90936e7ffe37c~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1729497423&x-orig-sign=kldomHxuTrIcIlBQOMc%2F3yox3Ng%3D)
@@ -533,21 +91,21 @@ fun MainScreen() {
 
 > 本文先介绍如何实现？
 >
-> 1.  Compose界面是代码写布局，打包成纯代码jar,如果在apk包内是以dex包装形式存在的
+> 1. Compose界面是代码写布局，打包成纯代码jar,如果在apk包内是以dex包装形式存在的
 >
-> 2.  通过ClassLoader加载外部dex文件，android加载外部dex文件涉及到classLoader是`DexClassLoader`
+> 2. 通过ClassLoader加载外部dex文件，android加载外部dex文件涉及到classLoader是`DexClassLoader`
 >
-> 3.  怎么通过Android Studio 制作成jar ,再制作成可以 dex文件供 `DexClassLoader`加载呢？
+> 3. 怎么通过Android Studio 制作成jar ,再制作成可以 dex文件供 `DexClassLoader`加载呢？
 >
-> 4.  通过`build-tools\33.0.0`下面 `d8`执行ANT命令可以将jar转化成xxx\_dex.jar （早些年只有java写的是用 `dx`）
+> 4. 通过`build-tools\33.0.0`下面 `d8`执行ANT命令可以将jar转化成xxx\_dex.jar （早些年只有java写的是用 `dx`）
 >
-> 5.  通过宿主包含接口，classloader反射加载插件包内接口实现便可以完成
+> 5. 通过宿主包含接口，classloader反射加载插件包内接口实现便可以完成
 >
-> 6.  本文只是简单介绍jar最简单的插件化，更多插件化，全动态插件化请参考：\
->     [大型项目架构：全动态插件化+模块化+Kotlin+协程+Flow+Retrofit+JetPack+MVVM+极限瘦身+极限启动优化+架构示例+全网唯一](https://juejin.cn/post/7381787510071934985)，\
->     以及头部介绍的[WXDynamicPlugin](https://juejin.cn/post/7367676494976532490)系列的7篇文章
+> 6. 本文只是简单介绍jar最简单的插件化，更多插件化，全动态插件化请参考：\
+     > [大型项目架构：全动态插件化+模块化+Kotlin+协程+Flow+Retrofit+JetPack+MVVM+极限瘦身+极限启动优化+架构示例+全网唯一](https://juejin.cn/post/7381787510071934985)，\
+     > 以及头部介绍的[WXDynamicPlugin](https://juejin.cn/post/7367676494976532490)系列的7篇文章
 
-1.  **Compose 插件化开搞**： 先建一个依赖库 **`WX-Compose-IPlugin`**，里面只包含了一个接口入下，让宿主app工程依赖它:
+1. **Compose 插件化开搞**： 先建一个依赖库 **`WX-Compose-IPlugin`**，里面只包含了一个接口入下，让宿主app工程依赖它:
 
 <!---->
 
@@ -557,7 +115,7 @@ fun MainScreen() {
 
     }
 
-2.  宿主里面自定义一个`WXClassLoader`(这里我直接从 我的 WXDynamicPlugin工程copy过来了) :
+2. 宿主里面自定义一个`WXClassLoader`(这里我直接从 我的 WXDynamicPlugin工程copy过来了) :
 
 <!---->
 
@@ -586,7 +144,7 @@ fun MainScreen() {
         }
     }
 
-3.  建一个模块工程lib:**`WX-Compose-PluginImpl`** 依赖 **`WX-Compose-IPlugin`** 工程，在其里面实现代码：
+3. 建一个模块工程lib:**`WX-Compose-PluginImpl`** 依赖 **`WX-Compose-IPlugin`** 工程，在其里面实现代码：
 
 <!---->
 
@@ -606,16 +164,16 @@ fun MainScreen() {
         }
     }
 
-4.  编译 **`WX-Compose-PluginImpl`** 工程后，找到该工程下 **`build/intermediates/aar_main_jar/release/syncReleaseLibJars/classes.jar`**
+4. 编译 **`WX-Compose-PluginImpl`** 工程后，找到该工程下 **`build/intermediates/aar_main_jar/release/syncReleaseLibJars/classes.jar`**
 
-5.  拷贝classes.jar到自己电脑 \build-tools\33.0.0\下面（注意一定要33.0.0以下）然后在该环境变量下打开cmd命令执行命令：（即在该文件所在的上面地址栏敲cmd,然后回车）\
-    d8 --dex --output=classes\_dex.jar classes.jar\
-    注意：等号后面是输出文件名， 后面为输入文件名，早起不是kotlin代码写的，是全java代码写的需要执行命令为：\
-    dx --dex --output=classes\_dex.jar classes.jar\
-    输出的classes\_dex.jar就是我们classloader 能够加载到android能识别的jar了\
-    把 **`classes_dex.jar  重命名成 compose_plugin_lib_dex`**（因为下面宿主代码里面写的文件名是compose\_plugin\_lib\_dex）
+5. 拷贝classes.jar到自己电脑 \build-tools\33.0.0\下面（注意一定要33.0.0以下）然后在该环境变量下打开cmd命令执行命令：（即在该文件所在的上面地址栏敲cmd,然后回车）\
+   d8 --dex --output=classes\_dex.jar classes.jar\
+   注意：等号后面是输出文件名， 后面为输入文件名，早起不是kotlin代码写的，是全java代码写的需要执行命令为：\
+   dx --dex --output=classes\_dex.jar classes.jar\
+   输出的classes\_dex.jar就是我们classloader 能够加载到android能识别的jar了\
+   把 **`classes_dex.jar  重命名成 compose_plugin_lib_dex`**（因为下面宿主代码里面写的文件名是compose\_plugin\_lib\_dex）
 
-6.  宿主app工程代码写法：
+6. 宿主app工程代码写法：
 
 ```
 
@@ -648,14 +206,14 @@ class ComposePluginActivity : ComponentActivity() {
 }
 ```
 
-7.  **本示例我没有把插件放在assets下写copy操作，也没有写下载，`查看效果先运行安装debug包，打开插件页`面然后其在手机的data/data/com.wx.compose.plugin/files/d\_dex/下上传 我们的 compose\_plugin\_lib\_dex插件到手机， 就可以看到效果啦** 如下图：
-    ![img\_v3\_02fl\_a5f9ebc8-9e0b-4ed3-a194-c12b3cae9fbg.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/015bb5c9314244c7af8d572632c413fc~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1729497423&x-orig-sign=sd9Ou75M4FE%2FYUeLh7fqyQWYhpM%3D)
+7. **本示例我没有把插件放在assets下写copy操作，也没有写下载，`查看效果先运行安装debug包，打开插件页`面然后其在手机的data/data/com.wx.compose.plugin/files/d\_dex/下上传 我们的 compose\_plugin\_lib\_dex插件到手机， 就可以看到效果啦** 如下图：
+   ![img\_v3\_02fl\_a5f9ebc8-9e0b-4ed3-a194-c12b3cae9fbg.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/015bb5c9314244c7af8d572632c413fc~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1729497423&x-orig-sign=sd9Ou75M4FE%2FYUeLh7fqyQWYhpM%3D)
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 我是分割线君 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-8.  **`上面 4 和 5 的步骤太麻烦了，可以一键自动搞定吗？  可以的`**
+8. **`上面 4 和 5 的步骤太麻烦了，可以一键自动搞定吗？ 可以的`**
 
-9.  整个项目中在 **`local.properties`** 里面配置: **`build-tools\33.0.0`** 下面 **`d8`** 执行ANT命令可以将jar转化成xxx\_dex.jar的环境目录,注意此处需要 **`33.0.0或者32.0.0`**,没有的可以自行下载
+9. 整个项目中在 **`local.properties`** 里面配置: **`build-tools\33.0.0`** 下面**`d8`** 执行ANT命令可以将jar转化成xxx\_dex.jar的环境目录,注意此处需要 **`33.0.0或者32.0.0`**,没有的可以自行下载
 
 <!---->
 
@@ -739,11 +297,47 @@ tasks.whenTaskAdded { task ->
 
 本文重点用一个Demo示例工程介绍了：
 
-1.  Compose最基础的布局写法，并输出了和传统XML常用控件对照表
-2.  如何直接链接到官方example，查看代码
-3.  纯代码jar 如何做到插件化的（以compose作为示例）
-4.  同时涉及到ANT编程，如何将jar 转化成 android上能识别的dex文件，Gradle相关Task配置用法
+1. Compose最基础的布局写法，并输出了和传统XML常用控件对照表
+2. 如何直接链接到官方example，查看代码
+3. 纯代码jar 如何做到插件化的（以compose作为示例）
+4. 同时涉及到ANT编程，如何将jar 转化成 android上能识别的dex文件，Gradle相关Task配置用法
 
 #### 感谢阅读：
 
 #### 欢迎    关注，点赞、收藏
+
+## 全动态插件化框架WXDynamicPlugin介绍文章：
+
+#### [(一) 插件化框架开发背景：零反射，零HooK,全动态化，插件化框架，全网唯一结合启动优化的插件化架构](https://juejin.cn/post/7347994218235363382)
+
+#### [(二）插件化框架主要介绍：零反射，零HooK,全动态化，插件化框架，全网唯一结合启动优化的插件化架构](https://juejin.cn/post/7367676494976532490)
+
+#### [(三）插件化框架内部详细介绍: 零反射，零HooK,全动态化，插件化框架，全网唯一结合启动优化的插件化架构](https://juejin.cn/post/7368397264026370083)
+
+#### [(四）插件化框架接入详细指南：零反射，零HooK,全动态化，插件化框架，全网唯一结合启动优化的插件化架构](https://juejin.cn/post/7372393698230550565)
+
+#### [(五) 大型项目架构：全动态插件化+模块化+Kotlin+协程+Flow+Retrofit+JetPack+MVVM+极限瘦身+极限启动优化+架构示例+全网唯一](https://juejin.cn/post/7381787510071934985)
+
+#### [(六) 大型项目架构：解析全动态插件化框架WXDynamicPlugin是如何做到全动态化的？](https://juejin.cn/post/7388891131037777929)
+
+#### [(七) 还在不断升级发版吗？从0到1带你看懂WXDynamicPlugin全动态插件化框架？](https://juejin.cn/post/7412124636239904819)
+
+#### [(八) Compose插件化：一个Demo带你入门Compose，同时带你入门插件化开发](https://juejin.cn/post/7425434773026537483)
+
+## 本人其他开源：
+
+#### [Kotlin+协程+Flow+Retrofit+OkHttp这么好用，不运行安装到手机可以调试接口吗?可以自己搭建一套网络请求工具](https://juejin.cn/post/7406675078810910761)
+
+#### [花式封装：Kotlin+协程+Flow+Retrofit+OkHttp +Repository，倾囊相授,彻底减少模版代码进阶之路](https://juejin.cn/post/7417847546323042345)
+
+#### [注解处理器在架构，框架中实战应用：MVVM中数据源提供Repository类的自动生成](https://juejin.cn/post/7392258195089162290)
+
+#### 感谢阅读，欢迎给给个星，你们的支持是我开源的动力
+
+## 欢迎光临：
+
+#### **[我的掘金地址](https://juejin.cn/user/356661835082573)**
+
+#### 关于我
+
+**VX号：wgllss**  ,如果想更多交流请加我VX

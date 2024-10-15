@@ -207,9 +207,9 @@ class ComposePluginActivity : ComponentActivity() {
 ```
 
 7. **本示例我没有把插件放在assets下写copy操作，也没有写下载，`查看效果先运行安装debug包，打开插件页`面然后其在手机的data/data/com.wx.compose.plugin/files/d\_dex/下上传 我们的 compose\_plugin\_lib\_dex插件到手机， 就可以看到效果啦** 如下图：
-   ![img\_v3\_02fl\_a5f9ebc8-9e0b-4ed3-a194-c12b3cae9fbg.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/015bb5c9314244c7af8d572632c413fc~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1729497423&x-orig-sign=sd9Ou75M4FE%2FYUeLh7fqyQWYhpM%3D)
+   ![img_v3_02fl_a5f9ebc8-9e0b-4ed3-a194-c12b3cae9fbg.jpg](https://raw.githubusercontent.com/wgllss/WX-Compose-Plugin/master/pic/img_v3_02fl_a5f9ebc8-9e0b-4ed3-a194-c12b3cae9fbg.jpg)
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 我是分割线君 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 我是分割线君 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 8. **`上面 4 和 5 的步骤太麻烦了，可以一键自动搞定吗？ 可以的`**
 

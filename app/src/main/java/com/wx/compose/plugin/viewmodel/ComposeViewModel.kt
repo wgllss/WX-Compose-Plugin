@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.wx.compose.plugin.R
 import com.wx.compose.plugin.activity.BottomNavigationActivity
 import com.wx.compose.plugin.activity.CollapsableActivity
+import com.wx.compose.plugin.activity.ComposeDHListActivity
 import com.wx.compose.plugin.activity.ComposeHListActivity
 import com.wx.compose.plugin.activity.ComposeLayoutActivity
 import com.wx.compose.plugin.activity.ComposeListActivity
@@ -145,6 +146,7 @@ class ComposeViewModel : ViewModel() {
                 MainUIItem("基础布局", ComposeLayoutActivity::class.java),
                 MainUIItem("动态列表竖", ComposeListActivity::class.java),
                 MainUIItem("动态列表横", ComposeHListActivity::class.java),
+                MainUIItem("网红广告滚动轮播特效", ComposeDHListActivity::class.java),
                 MainUIItem("GirdLayout", GirdLayoutActivity::class.java),
                 MainUIItem("GirdLayout(横向)", MutilHGirdLayoutActivity::class.java),
                 MainUIItem("MutilGirdLayout", MutilGirdLayoutActivity::class.java),

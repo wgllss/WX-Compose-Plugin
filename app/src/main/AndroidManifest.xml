@@ -11,6 +11,7 @@
 
 
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -107,10 +108,11 @@
             android:exported="false" />
         <activity
             android:name=".activity.ComposeListActivity"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true" />
+        <activity
+            android:name=".activity.ComposeDHListActivity"
+            android:screenOrientation="landscape"
+            android:exported="true" />
     </application>
 
 </manifest>
